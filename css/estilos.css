@@ -1,0 +1,42 @@
+*{
+    font-family: Verdana;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.title{
+    width: 300px;
+    align-items: center;
+    padding: 10px;
+    display: inline-block;
+}
+
+.clientForm{
+    background-color: #55ccff;
+    padding: 10px;
+}
+
+.orderForm{
+    background-color: #40ccbb;
+    padding: 10px;
+}
+
+.formSection{
+    padding: 10px;
+}
+
+.alignElement{
+    display: inline-block;
+}
+
+.alertStyleInfo{
+    background-color: red;
+}
+
+.mandatoryError{
+    color:red;
+}

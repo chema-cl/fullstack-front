@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="#">
+    <title>Pizzas Full Stack V4</title>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div>
+        <img alt="logo" id="logo" src="images/logo.jpg" class="logo">
+        <h1 id="title" class="title">Pizzas Full Stack</h1>
+    </div>
+    <div id="alertsZone"></div>
+    <!--El action se carga desde el fichero script.js porque concatenamos el servidor desde una constante-->
+    <form id="datosCliente" method="post">
+        <div class="clientForm">
+            <h2>Datos del cliente</h2> 
+            <div class="formSection">
+                <label id="labelNombre" for="nombre" class="alignElement">Nombre (*):</label>
+                <input type="text" id="nombre" name="nombre" class="alignElement">
+            </div>
+            <div class="formSection">
+                <label id="labelApellidos" for="apellidos" class="alignElement">Apellidos (*):</label>
+                <input type="text" id="apellidos" name="apellidos" class="alignElement">
+            </div>
+            <div class="formSection">
+                <label for="fechaNacimiento" class="alignElement">Fecha de nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" class="alignElement">
+            </div>
+            <div class="formSection">
+                <label for="telefono" class="alignElement">Teléfono:</label>
+                <input type="number" id="telefono" name="telefono" class="alignElement">
+            </div>
+            <div class="formSection">
+                <label for="direccionPostal" class="alignElement">Dirección postal:</label>
+                <textarea id="direccionPostal" name="direccionPostal" class="alignElement"></textarea>
+            </div>        
+        </div>    
+        <div class="orderForm">
+            <h2>Datos del pedido</h2>
+            <div class="formSection">
+                <label for="size">Tamaño:</label>
+                <select id="size" name="size">
+                    <option id="size1">Pequeña</option>
+                    <option id="size2" selected>Mediana</option>
+                    <option id="size3">Grande</option>
+                </select>  
+            </div>
+            <div class="formSection">
+                <label>Ingredientes:</label>
+                <input type="checkbox" id="york" name="york">
+                <label for="york">Jamón York</label>
+                <input type="checkbox" id="champinones" name="champinones">
+                <label for="champinones">Champiñones</label>
+                <input type="checkbox" id="pepperoni" name="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="aceitunas" name="aceitunas">
+                <label for="aceitunas">Aceitunas</label>
+            </div>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>    
+    </form>
+</body>
+</html>
+<script src="jquery/jquery-3.6.0.min.js"></script>
+<script src="jquery/script.js"></script>
