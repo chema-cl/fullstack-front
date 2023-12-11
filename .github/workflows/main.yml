@@ -1,0 +1,16 @@
+name: HTML5 Validator
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: HTML5 Validator
+      uses: Cyb3r-Jak3/html5validator-action@v0.6.1
+      with:
+        root: ${{ github.workspace }} 
