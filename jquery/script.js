@@ -62,12 +62,11 @@ function checkSize() {
         url: completeBackPath("checksize"),
         data: {size : size},
         success: function(response) {
-            if (response == "true") {
-                $('#resultado_tamano').text("Disponible");
+            $('#resultado_tamano').text(response);
+            if (response == "Disponible") {
                 resolve(true);
             } else {
                 $('#resultado_tamano').addClass("mandatoryError");
-                $('#resultado_tamano').text("No Disponible");
                 resolve(false);
             }            
         },
